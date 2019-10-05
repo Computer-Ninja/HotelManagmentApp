@@ -80,7 +80,7 @@
                                       <a id="brand" class="clearfix navbar-brand border-right-whitesmoke" href="index.jsp"><img src="img/site-logo.png" alt="Trips"></a>
                                       <div class="header_login floatleft">
                                           <ul>
-                                              <li><a href="Login.jsp">Login</a></li>
+                                              <li><a href="login.jsp">Login</a></li>
                                               <li><a href="registration.jsp">Register</a></li>
                                           </ul>
                                       </div>

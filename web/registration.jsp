@@ -71,7 +71,7 @@
                         <div class="right_header_top clearfix floatright">
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="">
-                                    <a class="border-right-dark-4" href="Login.jsp">login</a></li>
+                                    <a class="border-right-dark-4" href="login.jsp">login</a></li>
                                 <li role="presentation">
                                     <a class="border-right-dark-4" href="registration.jsp">
                                         register

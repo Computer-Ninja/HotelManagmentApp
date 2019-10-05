@@ -25,7 +25,7 @@ public class ConnectionManager {
 
     private ConnectionManager() throws SQLException {
         try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
             this.connection = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
             System.out.println("Database Connection Creation Failed : " + ex.getMessage());
