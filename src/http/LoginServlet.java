@@ -9,33 +9,54 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
-@WebServlet("/login")
+@WebServlet(value = "/login")
 public class LoginServlet extends HttpServlet {
 
     private Connection connection;
 
-    public LoginServlet() {
-        this.connection = ConnectionManager.getConnection();
-    }
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+        resp.setContentType("text/html");
+        PrintWriter printWriter = resp.getWriter();
+        printWriter.println("<h1>Puka</h1>");
+        printWriter.flush();
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String username = req.getParameter("username");
+        String username = req.getParameter("email");
 
         String password = req.getParameter("password");
 
-        String sql = "SELECT * FROM users WHERE username=" + username + " AND password=" + password;
+        String sql = "SELECT * FROM users WHERE email = '" + username + "' AND password = '" + password + "'";
 
-        // ResultSet authResults = this.connection.createStatement(sql).execute(sql);
+        System.out.println(sql);
+
+        try {
+
+            this.connection = ConnectionManager.getInstance().getConnection();
+
+            ResultSet authResults = this.connection.createStatement().executeQuery(sql);
+
+            if (authResults.getFetchSize() == 1) {
+                System.out.println("hukanooo");
+                // dashboard
+                return;
+            }
+
+            System.out.println("hutah");
+
+            // return back to login
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         super.doPost(req, resp);
     }
