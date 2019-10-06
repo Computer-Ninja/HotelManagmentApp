@@ -23,7 +23,7 @@ public class DashboardServlet extends HttpServlet {
                 if (cookie.getName().equals("AUTH") && !cookie.getValue().equals("")) {
                     resp.setContentType("text/html");
                     PrintWriter printWriter = resp.getWriter();
-                    printWriter.println("<h1>Authenticated</h1>");
+                    resp.sendRedirect(req.getContextPath() + "/index-two.jsp");
                     printWriter.flush();
 
                     return;

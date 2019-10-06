@@ -151,7 +151,7 @@
                                     </li>
                                     
                                     <li><a href="contact-us.jsp">Contacts</a></li>
-                                    <li><a href="Account.html">Account</a></li>
+                                    <li><a href="Account.jsp">Account</a></li>
                                   </ul>
                                   <div class="emergency_number">
                                       <a href="tel:1234567890"><img src="img/call-icon.png" alt="">123 456 7890</a>

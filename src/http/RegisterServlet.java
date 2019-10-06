@@ -29,11 +29,11 @@ public class RegisterServlet extends HttpServlet {
         String lname =req.getParameter("lname");
         String address = req.getParameter("address");
         String phone = req.getParameter("phone");
-        String email=req.getarameter("email");
+        String email=req.getParameter("email");
         String password=req.getParameter("password");
         String repassword=req.getParameter("repassword");
 
-//        String sql=  " INSERT INTO `users`(`email`, `first_name`, `last_name`, `address`, `phone`, `password`) VALUES ()";
+  String sql=  " INSERT INTO `users`(`email`, `first_name`, `last_name`, `address`, `phone`, `password`) VALUES ()";
 
 
 
