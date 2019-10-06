@@ -1,6 +1,6 @@
 package http.models;
 
-public class Bookins {
+public class Booking {
 
 private String id;
 private String user_id;

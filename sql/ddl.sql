@@ -12,6 +12,7 @@ CREATE TABLE users
 );
 
 DROP TABLE room_booking;
+
 CREATE TABLE room_booking
 (
 

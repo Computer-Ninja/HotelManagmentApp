@@ -9,9 +9,9 @@ public class ConnectionManager {
     private static ConnectionManager instance;
 
     private Connection connection;
-    private String url = "jdbc:mysql://localhost:3306/hotelApp";
+    private String url = "jdbc:mysql://localhost:3306/hotelmanagement";
     private String username = "root";
-    private String password = "root";
+    private String password = "";
 
     public static ConnectionManager getInstance() throws SQLException {
         if (instance == null) {

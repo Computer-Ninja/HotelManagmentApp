@@ -23,14 +23,16 @@ public class DeleteBookingSevlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String DeleteId = req.getParameter("bookingid");
 
-        String query = "SELECT * FROM `room_booking` WHERE `id` = '" + AuthUtils.getUserId() + "'";
 
+        String query = "DELETE FROM `room_booking` WHERE `id` = '" + DeleteId + "'";
+        System.out.println(query);
 
         try {
 
 
-            ResultSet resultSet = ConnectionManager.getInstance().getConnection().createStatement().executeQuery(query);
+            int resultSet = ConnectionManager.getInstance().getConnection().createStatement().executeUpdate(query);
 
         } catch (SQLException e) {
 

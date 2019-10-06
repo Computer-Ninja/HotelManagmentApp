@@ -1,7 +1,7 @@
 package http;
 
 import config.ConnectionManager;
-import http.models.Bookins;
+import http.models.Booking;
 import http.utils.AuthUtils;
 
 import javax.servlet.ServletException;
@@ -24,31 +24,32 @@ public class DashboardServlet extends HttpServlet {
         if (AuthUtils.isAuthenticated(req)) {
 
             String query = "SELECT * FROM `users` WHERE `email` = '" + AuthUtils.getUserId() + "'";
-            String bookings = "SELECT * FROM `room_booking` WHERE `user_id` = '" + AuthUtils.getUserId() + "'";
 
 
-            List<Bookins> bookingss = new ArrayList<>();
+            List<Booking> bookingss = new ArrayList<>();
 
 
             try {
                 ResultSet resultSet = ConnectionManager.getInstance().getConnection().createStatement().executeQuery(query);
-                ResultSet bookhis = ConnectionManager.getInstance().getConnection().createStatement().executeQuery(bookings);
+                resultSet.next();
 
-                while (bookhis.next()) {
-                    Bookins booking = new Bookins();
+                String bookingQuery = "SELECT * FROM `room_booking` WHERE `user_id` = '" + resultSet.getString(1) + "'";
 
-                    booking.setId(bookhis.getString("id"));
-                    booking.setArrival(bookhis.getString("arrival"));
-                    booking.setDeparture(bookhis.getString("departure"));
-                    booking.setRoom(bookhis.getString("room"));
-                    booking.setAdult(bookhis.getString("adult"));
-                    booking.setChild(bookhis.getString("child"));
+                ResultSet bookings = ConnectionManager.getInstance().getConnection().createStatement().executeQuery(bookingQuery);
 
+                System.out.println(bookingQuery);
+
+                while (bookings.next()) {
+                    Booking booking = new Booking();
+                    booking.setId(bookings.getString(1));
+                    booking.setArrival(bookings.getString(3));
+                    booking.setDeparture(bookings.getString(4));
+                    booking.setRoom(bookings.getString(5));
+                    booking.setAdult(bookings.getString(6));
+                    booking.setChild(bookings.getString(7));
 
                     bookingss.add(booking);
                 }
-
-                resultSet.next();
 
                 String firstName = resultSet.getString("first_name");
                 String lastName = resultSet.getString("last_name");

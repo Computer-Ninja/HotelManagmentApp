@@ -1,6 +1,5 @@
-<%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
-<%@ page import="http.models.Bookins" %>
+<%@ page import="http.models.Booking" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -148,7 +147,9 @@
                             </li>
 
                             <li><a href="contact-us.jsp">Contacts</a></li>
-                            <li><a href="Account.html">Account</a></li>
+                            <li><a href="Account.html
+
+">Account</a></li>
                         </ul>
                         <div class="emergency_number">
                             <a href="tel:1234567890"><img src="img/call-icon.png" alt="">123 456 7890</a>
@@ -325,28 +326,35 @@
 
                                             <table border="1" width="100%">
                                                 <thead>
-                                                    <tr>
-                                                        <th>ID</th>
-                                                        <th>Arrival</th>
-                                                        <th>Departure</th>
-                                                        <th>Room</th>
-                                                        <th>adult</th>
-                                                        <th>child</th>
-                                                    </tr>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Arrival</th>
+                                                    <th>Departure</th>
+                                                    <th>Room</th>
+                                                    <th>adult</th>
+                                                    <th>child</th>
+                                                </tr>
                                                 </thead>
 
-                                                <% List<Bookins> bookings = (List<Bookins>) request.getAttribute("bookings");
-                                                    for (int i = 0; i <bookings.size(); i++) {
-                                                        Bookins book = bookings.get(i);
+                                                <% List<Booking> bookings = (List<Booking>) request.getAttribute("bookings");
+                                                    for (int i = 0; i < bookings.size(); i++) {
+                                                        Booking book = bookings.get(i);
                                                 %>
                                                 <tr>
-                                                    <td>${book.getId()}</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>
+                                                    <td><%=book.getId()%></td>
+                                                    <td><%=book.getArrival()%></td>
+                                                    <td><%=book.getDeparture()%></td>
+                                                    <td><%=book.getRoom()%></td>
+                                                    <td><%=book.getAdult()%></td>
+                                                     <td><%=book.getChild()%></td>
 
+                                                    <td>
+                                                        <form action="delete" method="post">
+                                                            <input type="hidden" name="bookingid" id="bookingid" value="<%=book.getId()%>">
+                                                            <button type="submit"
+                                                                    class="btn btn-warning btn-md floatright">Delete
+                                                            </button>
+                                                        </form>
 
 
                                                     </td>
