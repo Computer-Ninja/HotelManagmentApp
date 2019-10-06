@@ -244,18 +244,18 @@
                 <div style="comment-top  margin-top: 3rem !important;">
                     <div class="comment-bottom mobamuinfo_mail_grid_right">
 
-                        <form action="LoginServlet" method="post">
+                        <form action="profile" method="post">
                             <div class="row">
                                 <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;" class="form-group;">
                                  <label>Username</label>
-								<input class="form-control" type="text" name="uname" placeholder="Hiru" value="${username}" disabled="disabled">
+								<input class="form-control" type="text" name="username" value="${username}" disabled="disabled">
                                 </div>
 
                             </div>
                             <div class="row">
                                 <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;" class="form-group;">
                                <label>Current Password</label>
-								<input class="form-control" type="password" name="password1" placeholder="Current Password" required="">
+								<input class="form-control" type="password" name="old_password" id="old_password" placeholder="Current Password" required="">
                                 </div>
                             </div>
                             
@@ -263,7 +263,7 @@
                              <div class="row">
                                 <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;" class="form-group;">
                                     <label>New Password</label>
-								<input class="form-control" type="password" name="password" placeholder="New Password" required="">
+								<input class="form-control" type="password" name="password" id="password" placeholder="New Password" required="">
                                 </div>
                             </div>
                             
@@ -271,7 +271,7 @@
                              <div class="row">
                                 <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;" class="form-group;">
                                <label>Re-enter New Password</label>
-								<input class="form-control" type="password" name="repassword" placeholder="Re-enter New Password" required="">
+								<input class="form-control" type="password" name="password_re" id="password_re" placeholder="Re-enter New Password" required="">
                                 </div>
                             </div>
                             
