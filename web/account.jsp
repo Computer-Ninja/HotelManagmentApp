@@ -255,7 +255,7 @@
 																	style="-webkit-box-flex: 0; -ms-flex: 0 0 90%; flex: 0 0 50%; max-width: 80%;"
 																	class="form-group;">
 																	<label>First Name</label> <input class="form-control"
-																		type="text" name="fName" placeholder="Hiru"
+																		type="text" name="fName" placeholder="${first_name}"
 																		required="">
 																</div>
 
@@ -265,7 +265,7 @@
 																	style="-webkit-box-flex: 0; -ms-flex: 0 0 90%; flex: 0 0 50%; max-width: 80%;"
 																	class="form-group;">
 																	<label>Last Name</label> <input class="form-control"
-																		type="text" name="lName" placeholder="Piyumika"
+																		type="text" name="lName" placeholder="${last_name}"
 																		required="">
 																</div>
 															</div>
@@ -277,7 +277,7 @@
 																	class="form-group;">
 																	<label>Address</label> <input class="form-control"
 																		type="text" name="address"
-																		placeholder="No: 15, New Kandy Rd, Malabe" required="">
+																		placeholder=${address} required="">
 																</div>
 															</div>
 
