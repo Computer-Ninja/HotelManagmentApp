@@ -151,7 +151,7 @@
                                     </li>
                                     
                                     <li><a href="contact-us.jsp">Contacts</a></li>
-                                    <li><a href="Account.jsp">Account</a></li>
+                                    <li><a href="dashboard">Account</a></li>
                                   </ul>
                                   <div class="emergency_number">
                                       <a href="tel:1234567890"><img src="img/call-icon.png" alt="">123 456 7890</a>
@@ -230,7 +230,8 @@
                         <div class="hotel_booking_area">
                             <div class="container">
                                 <div class="hotel_booking">
-                                    <form id="form1" role="form" action="#" class="">
+
+                                    <form id="form1" role="form" action="booking" class="" method="post">
                                         <div class="col-lg-2 col-md-2 col-sm-2">
                                             <div class="room_book border-right-dark-1">
                                                 <h6>Book Your</h6>
@@ -239,13 +240,13 @@
                                         </div>
                                         <div class="form-group col-lg-2 col-md-2 col-sm-2">
                                             <div class="input-group border-bottom-dark-2">
-                                                <input class="date-picker" id="datepicker" placeholder="Arrival" type="text"/>
+                                                <input class="date-picker" name="Arrival" id="Arrival" placeholder="Arrival" type="text"/>
                                                 <div class="input-group-addon"><i class="fa fa-calendar"></i></div>               
                                             </div>
                                         </div>
                                         <div class="form-group col-lg-2 col-md-2 col-sm-2">
                                             <div class="input-group border-bottom-dark-2">
-                                                <input class="date-picker" id="datepicker1" placeholder="Departure" type="text"/>
+                                                <input class="date-picker" name="Departure" id="datepicker" placeholder="Departure" type="text"/>
                                                 <div class="input-group-addon"><i class="fa fa-calendar"></i></div>                
                                             </div>
                                         </div>
@@ -263,7 +264,7 @@
                                                 </div>
                                                 <div class="form-group col-lg-3 col-md-3 col-sm-3 icon_arrow">
                                                     <div class="input-group border-bottom-dark-2">
-                                                        <select class="form-control" name="room" id="adult">
+                                                        <select class="form-control" name="adult" id="adult">
                                                           <option selected="selected" disabled="disabled">1 Adult</option>
                                                           <option value="Single">1 Adult</option>
                                                           <option value="Double">2 Adult</option>
@@ -273,7 +274,7 @@
                                                 </div>
                                                 <div class="form-group col-lg-3 col-md-3 col-sm-3 icon_arrow">
                                                     <div class="input-group border-bottom-dark-2">
-                                                        <select class="form-control" name="room" id="child">
+                                                        <select class="form-control" name="child" id="child">
                                                           <option selected="selected" disabled="disabled">0 Child</option>
                                                           <option value="Single">0 Child</option>
                                                           <option value="Double">1 Child</option>
@@ -282,7 +283,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-3">
-                                                    <a class="btn btn-warning btn-md floatright">Book</a>
+                                                    <button type="submit" class="btn btn-warning btn-md floatright">Book</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -395,7 +396,7 @@
                                             </div>
                                         </div>
                                         <div class="room_block floatright">
-                                            <a href="#" class="btn btn-black">Book</a>
+                                             <button type="submit" class="btn btn-black">Book></button>
                                         </div>
                                     </div>
                                 </div>

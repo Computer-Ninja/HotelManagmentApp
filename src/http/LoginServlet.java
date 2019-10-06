@@ -49,7 +49,7 @@ public class LoginServlet extends HttpServlet {
 
                 resp.addCookie(cookie);
 
-                resp.sendRedirect(req.getContextPath() + "/dashboard");
+                resp.sendRedirect(req.getContextPath() + "/index-two.jsp");
             }
 
             connection.close();

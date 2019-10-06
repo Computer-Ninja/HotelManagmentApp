@@ -208,30 +208,12 @@
             <div style="comment-top  margin-top: 3rem !important;">
                 <div class="comment-bottom mobamuinfo_mail_grid_right">
 
-<<<<<<< HEAD
-        <!-- booking form -->
-        <div style="register-w3;">
-            <div style="width: 100%; padding-right: 15px; padding-left: 15px;margin-right: auto;  margin-left: auto; padding-top: 3rem !important;">
-
-
-                <div style="comment-top  margin-top: 3rem !important;">
-                    <div class="comment-bottom mobamuinfo_mail_grid_right">
-
-                        <form action="register" method="post">
-                            <div class="row">
-                                <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;" class="form-group;">
-                                 <label>First Name</label>
-								<input class="form-control" type="text" name="fName" placeholder="Naveen" required="">
-                                </div>
-
-=======
                     <form action="register" method="post">
                         <div class="row">
                             <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;"
                                  class="form-group;">
                                 <label>First Name</label>
                                 <input class="form-control" type="text" name="fName" required="">
->>>>>>> a5ae6cd3d05eb4a83cd9fdf2aab4918d5fad3028
                             </div>
 
                         </div>
@@ -239,18 +221,6 @@
                             <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;"
                                  class="form-group;">
                                 <label>Last Name</label>
-<<<<<<< HEAD
-								<input class="form-control" type="text" name="lName" placeholder="Perera" required="">
-                                </div>
-                            </div>
-                            
-                            
-                             <div class="row">
-                                <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;" class="form-group;">
-                                    <label>Address</label>
-								<input class="form-control" type="text" name="address" placeholder="No. 26, Sir Marcus Fernando road,. Colombo 07" required="">
-                                </div>
-=======
                                 <input class="form-control" type="text" name="lName" required="">
                             </div>
                         </div>
@@ -262,7 +232,6 @@
                                 <label>Address</label>
                                 <input class="form-control" type="text" name="address"
                                        placeholder="No: 15, New Kandy Rd, Malabe" required="">
->>>>>>> a5ae6cd3d05eb4a83cd9fdf2aab4918d5fad3028
                             </div>
                         </div>
 
@@ -271,13 +240,8 @@
                             <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;"
                                  class="form-group;">
                                 <label>Phone Number</label>
-<<<<<<< HEAD
-								<input class="form-control" type="number" name="phone" placeholder="0774359066" required="">
-                                </div>
-=======
                                 <input class="form-control" type="number" name="phone" placeholder="0773331258"
                                        required="">
->>>>>>> a5ae6cd3d05eb4a83cd9fdf2aab4918d5fad3028
                             </div>
                         </div>
 
@@ -286,13 +250,8 @@
                             <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;"
                                  class="form-group;">
                                 <label>Email</label>
-<<<<<<< HEAD
-								<input class="form-control" type="email" name="email" placeholder="nigambohotel@gmail.com"required="">
-                                </div>
-=======
                                 <input class="form-control" type="email" name="email" placeholder="hiru@gmail.com"
                                        required="">
->>>>>>> a5ae6cd3d05eb4a83cd9fdf2aab4918d5fad3028
                             </div>
                         </div>
 
@@ -482,8 +441,3 @@
 
 </body>
 </html>
-
-
-
-
-
