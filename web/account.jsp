@@ -1,6 +1,5 @@
-<%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
-<%@ page import="http.models.Bookins" %>
+<%@ page import="http.models.Booking" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -325,28 +324,28 @@
 
                                             <table border="1" width="100%">
                                                 <thead>
-                                                    <tr>
-                                                        <th>ID</th>
-                                                        <th>Arrival</th>
-                                                        <th>Departure</th>
-                                                        <th>Room</th>
-                                                        <th>adult</th>
-                                                        <th>child</th>
-                                                    </tr>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Arrival</th>
+                                                    <th>Departure</th>
+                                                    <th>Room</th>
+                                                    <th>adult</th>
+                                                    <th>child</th>
+                                                </tr>
                                                 </thead>
 
-                                                <% List<Bookins> bookings = (List<Bookins>) request.getAttribute("bookings");
-                                                    for (int i = 0; i <bookings.size(); i++) {
-                                                        Bookins book = bookings.get(i);
+                                                <% List<Booking> bookings = (List<Booking>) request.getAttribute("bookings");
+                                                    for (int i = 0; i < bookings.size(); i++) {
+                                                        Booking book = bookings.get(i);
                                                 %>
                                                 <tr>
-                                                    <td>${book.getId()}</td>
+                                                    <td><%=book.getId()%></td>
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
                                                     <td>
-                                                        <form >
+                                                        <form>
 
                                                         </form>
                                                     </td>
