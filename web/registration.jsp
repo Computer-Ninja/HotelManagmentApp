@@ -202,7 +202,7 @@
                 <div style="comment-top  margin-top: 3rem !important;">
                     <div class="comment-bottom mobamuinfo_mail_grid_right">
 
-                        <form action="LoginServlet" method="post">
+                        <form action="register" method="post">
                             <div class="row">
                                 <div style="-webkit-box-flex: 0;-ms-flex: 0 0 90%;  flex: 0 0 50%; max-width: 80%;" class="form-group;">
                                  <label>First Name</label>

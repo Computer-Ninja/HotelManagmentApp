@@ -98,7 +98,7 @@
                                           <li role="presentation"><a role="menuitem" tabindex="-1" href="index-two.jsp">Home Page two</a></li>
                                         </ul>
                                     </li>        
-                                    <li><a href="accomodation.jspo">Accomodation</a></li>
+                                    <li><a href="accomodation.jsp">Accomodation</a></li>
                                     <li><a href="gallery.jsp">Gallery</a></li>
                                     <li role="presentation" class="dropdown">
                                         <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
@@ -112,7 +112,7 @@
                                           <li role="presentation"><a role="menuitem" tabindex="-1" href="404.jsp">404 Page</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="blog.html">News</a></li>
+                                    <li><a href="blog.jsp">News</a></li>
                                     <li><a href="contact-us.jsp">Contacts</a></li>
                                   </ul>
                                   <div class="emergency_number">
